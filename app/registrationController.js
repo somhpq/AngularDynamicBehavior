@@ -13,7 +13,7 @@
             };
             
             model.register = function(){
-                model.formInfo = 'SUBMITTED - ' + JSON.stringify(model.form);
+                //
             };
             
             model.isEmpty = function(obj){

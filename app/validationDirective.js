@@ -18,7 +18,7 @@
                     model.$parsers.unshift(function(val) {
                         var valid = ruleFunctions[func](val);
                         model.$setValidity(key, valid);
-                        //console.log('usernameDir-' + func + '>>>' + valid);\
+                        //console.log('usernameDir-' + func + '>>>' + valid);
                         
                         return val;
                     });

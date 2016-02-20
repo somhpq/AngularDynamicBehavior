@@ -7,29 +7,29 @@
                 var
                 // MAX
                 checkMaxLength5 = function(str) {
-                    var input = str;    //(str || '').trim();
+                    var input = (str || '').trim();
                     //console.log('max5> ' + input);
                     return (input.length <= 5) ? true: false;
                 }
                 ,checkMaxLength7 = function(str) {
-                    var input = str;    //(str || '').trim();
+                    var input = (str || '').trim();
                     //console.log('max7> ' + input);
                     return (input.length <= 7) ? true: false;
                 }
                 ,checkMaxLength10 = function(str) {
-                    var input = str;    //(str || '').trim();
+                    var input = (str || '').trim();
                     //console.log('max10> ' + input);
                     return (input.length <= 10) ? true: false;
                 }
                 
                 // MIN
                 ,checkMinLength2 = function(str) {
-                    var input = str;    //(str || '').trim();
+                    var input = (str || '').trim();
                     //console.log('min2> ' + input);
                     return (input.length >= 2) ? true: false;
                 }
                 ,checkMinLength5 = function(str) {
-                    var input = str;    //(str || '').trim();
+                    var input = (str || '').trim();
                     //console.log('min5> ' + input);
                     return (input.length >= 5) ? true: false;
                 }
