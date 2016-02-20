@@ -1,0 +1,35 @@
+{
+  "name": "AngularDynamicBehavior",
+  "authors": [
+    "somhpq <som.hpq@gmail.com>"
+  ],
+  "description": "Build behavior dynamically from different views for the common directive (shared among multiple views) to perform - in this particular example code, the behavior to be built dynamically is the validation rules that will be performed by the shared directive",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "angularjs",
+    "strategy",
+    "directive",
+    "builder"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-animate": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "angular-sanitize": "^1.5.0",
+    "angular-ui": "^0.4.0",
+    "jquery": "^2.2.0",
+    "lodash": "^4.3.0",
+    "bootstrap": "^3.3.6",
+    "angular-filter": "^0.5.8"
+  }
+}

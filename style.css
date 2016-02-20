@@ -1,0 +1,13 @@
+.top100 {
+    margin-top: 100px;
+}
+.top200 {
+    margin-top: 200px;
+}
+.jumbotron.registration{
+    color: #FFF;
+    background-color: #B11313;
+}
+.jumbotron.payment{
+    color: #B11313;
+}

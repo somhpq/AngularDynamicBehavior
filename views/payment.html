@@ -1,0 +1,43 @@
+<div class='jumbotron container top200'>
+    <p>
+       <span class='h2' ng-bind='title'></span> 
+        This is payment view !
+    </p>
+    <form novalidate name='payment' class='form-horizontal' role='form'>
+        <div class='form-group'>
+            <label for='firstName' class='col-sm-2 control-label'>First Name</label>
+            <div class='col-sm-10'>
+                <input class='form-control' name='firstName' placeholder='First Name' ng-model='form.firstName' check-firstname>
+                <div class='help-block' ng-show='payment.firstName.$touched &&  !isEmpty(payment.firstName.$error)'>
+                    <span>First Name validation is performed by <span class='btn-xs btn-default'>firstnamedDir</span> with 2 rules:</span>
+                    <code>min 2</code> and <code>max 5</code>
+                </div>
+            </div>
+        </div>
+        <div class='form-group'>
+            <label for='lastName' class='col-sm-2 control-label'>Last Name</label>
+            <div class='col-sm-10'>
+                <input class='form-control' name='lastName' placeholder='Last Name' ng-model='form.lastName' check-lastname>
+                <div class='help-block' ng-show='payment.lastName.$touched && !isEmpty(payment.lastName.$error)'>
+                    <span>Password validation is performed by <span class='btn-xs btn-default'>lastnameDir</span> with 2 rules:</span>
+                    <code>required</code> and <code>max 7</code>
+                </div>
+            </div>
+        </div>
+        <div class='form-group'>
+            <div class='col-sm-offset-2 col-sm-10'>
+                <button type='submit' class='btn btn-primary' ng-click='submit()'>Submit</button>
+            </div>
+        </div>
+
+        <div ng-show='payment.firstName.$touched'>
+            <code ng-show='payment.firstName.$error.minLength'>First Name cannot shorter than 2!</code>
+            <code ng-show='payment.firstName.$error.maxLength'>First Name cannot longer than 5!</code>
+        </div>
+        <div ng-show='payment.lastName.$touched'>
+            <code ng-show='payment.lastName.$error.required'>Last Name is required</code>
+            <code ng-show='payment.lastName.$error.maxLength'>Last Name cannot longer than 7!</code>
+        </div>
+        
+    </form>
+</div>

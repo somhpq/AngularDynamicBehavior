@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <link rel='stylesheet' href='lib/bootstrap/dist/css/bootstrap.min.css'>
+</head>
+
+<body ng-app='dynamicBehavior'>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Restrict Access to Secret View</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref='home'>Home View</a></li>
+                <li><a ui-sref='pay'>Payment View</a></li>
+                <li><a ui-sref='reg'>Registration View</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    
+    {{1 + 100009}}
+    -
+    <div ui-view class='top100'></div>
+    
+    <script type='text/javascript' src="lib/jquery/dist/jquery.min.js"></script>
+    <script type='text/javascript' src='lib/angular/angular.min.js'></script>
+    <script type='text/javascript' src='lib/angular-ui-router/release/angular-ui-router.min.js'></script>
+    <script type='text/javascript' src='lib/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='app/app.js'></script>
+    <script type='text/javascript' src='app/validationContextService.js'></script>
+    <script type='text/javascript' src='app/validationBuilderService.js'></script>
+    <script type='text/javascript' src='app/validationDirective.js'></script>
+    <script type='text/javascript' src='app/homeController.js'></script>
+    <script type='text/javascript' src='app/paymentController.js'></script>
+    <script type='text/javascript' src='app/registrationController.js'></script>
+    
+</body>
+    
+</html>
